@@ -14,9 +14,13 @@
 | **费用** | 安装免费。每次生成消耗 Beatra 账号积分，只有你明确要求这次生成或批准确认卡后才会付费。 |
 | **支持的 Agent** | Claude Code、Codex、OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="虚构品牌「豆拾 DOUSHI」手摇磨豆机的小红书笔记：文案由 Skill 生成，封面图由 Beatra AI 生成。"></p>
+
+*虚构品牌「豆拾 DOUSHI」手摇磨豆机的小红书笔记：文案由 Skill 生成，封面图由 Beatra AI 生成。*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.1.6 |
+| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.1.7 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/zhongcao-note-copywriter) 自动发布，问题请到那里反馈。
 

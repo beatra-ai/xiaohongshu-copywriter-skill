@@ -14,9 +14,13 @@ Turn a product, experience, topic, or audience brief into Xiaohongshu title opti
 | **Cost** | Free to install. Each render uses credits on your Beatra account, and paid steps run only when you ask for that exact render or approve its card. |
 | **Works with** | Claude Code, Codex, OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="Xiaohongshu note copy for a fictional portable coffee grinder, DOUSHI: the copy was written by the Skill and the cover photo was AI-generated with Beatra."></p>
+
+*Xiaohongshu note copy for a fictional portable coffee grinder, DOUSHI: the copy was written by the Skill and the cover photo was AI-generated with Beatra.*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.1.6 |
+| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.1.7 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/zhongcao-note-copywriter). Report issues there.
 
