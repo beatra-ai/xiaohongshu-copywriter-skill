@@ -20,7 +20,7 @@ Turn a product, experience, topic, or audience brief into Xiaohongshu title opti
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.0 |
+| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.3 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/zhongcao-note-copywriter). Report issues there.
 
@@ -79,12 +79,12 @@ From you. Prices, results, credentials, and personal experience are written from
 
 Yes. Name the language and the note is written in it, keeping the same structure and the same length discipline.
 
-## Updates
+## Updates and security
 
-Each installed skill checks for a new version at most once a day, verifies the
-official archive before replacing itself, and leaves your installation untouched
-if anything fails. Turn it off at any time — see
-`references/automatic-updates-and-safety.md` inside the skill.
+Since the 2026-10 release, this skill contains no self-updater: it runs only the
+files you installed and never replaces them on its own. Update it with the tool
+you installed it with — `npx skills update zhongcao-note-copywriter` or `gh skill update zhongcao-note-copywriter`.
+Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 

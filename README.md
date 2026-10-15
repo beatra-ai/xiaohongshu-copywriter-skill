@@ -20,7 +20,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.0 |
+| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.3 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/zhongcao-note-copywriter) 自动发布，问题请到那里反馈。
 
@@ -78,10 +78,11 @@ gh skill install beatra-ai/xiaohongshu-copywriter-skill zhongcao-note-copywriter
 
 可以。指定语言即可，结构和篇幅要求保持一致。
 
-## 更新
+## 更新与安全
 
-安装后的 skill 每天最多检查一次新版本，替换前先校验官方归档，任何一步失败都不会动你已安装的版本。
-随时可以关闭，见 skill 内的 `references/automatic-updates-and-safety.md`。
+自 2026 年 10 月的版本起，本 skill 不再包含自更新程序：它只运行你安装的文件，从不自行替换。
+请用安装时的工具更新——`npx skills update zhongcao-note-copywriter` 或 `gh skill update zhongcao-note-copywriter`。
+详见 skill 内的 `references/updates-and-security.md`。
 
 ## 许可证
 
