@@ -20,7 +20,7 @@ Turn a product, experience, topic, or audience brief into Xiaohongshu title opti
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.3 |
+| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.4 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/zhongcao-note-copywriter). Report issues there.
 
@@ -46,6 +46,12 @@ Or paste this into your agent:
 ```text
 Install the zhongcao-note-copywriter skill from https://github.com/beatra-ai/xiaohongshu-copywriter-skill (folder skills/zhongcao-note-copywriter), then follow its SKILL.md to connect my Beatra account.
 ```
+
+## Specs
+
+As of 2026-10-16. Live list: https://docs.beatra.ai/en/docs/models
+
+- **Text to image** — 10 models (Qwen Image 2.0 Fast, Qwen Image 3.0, Qwen Image 3.0 Pro, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro, MiniMax Image 01 Live); up to 4 images per request; canvas up to 16777216 pixels
 
 ## What you get
 
@@ -91,3 +97,9 @@ Details: `references/updates-and-security.md` inside the skill.
 [MIT-0](LICENSE) — free to use, modify, and redistribute, including
 commercially. No attribution required. Same terms as these skills carry on
 ClawHub.
+
+## Links
+
+- Website — https://beatra.ai
+- Docs — https://docs.beatra.ai
+- Console — https://console.beatra.ai
