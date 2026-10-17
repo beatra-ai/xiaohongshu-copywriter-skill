@@ -47,11 +47,12 @@ Or paste this into your agent:
 Install the zhongcao-note-copywriter skill from https://github.com/beatra-ai/xiaohongshu-copywriter-skill (folder skills/zhongcao-note-copywriter), then follow its SKILL.md to connect my Beatra account.
 ```
 
-## Specs
+## Technical Specifications & Output Limits
 
 As of 2026-10-16. Live list: https://docs.beatra.ai/en/docs/models
 
-- **Text to image** — 10 models (Qwen Image 2.0 Fast, Qwen Image 3.0, Qwen Image 3.0 Pro, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro, MiniMax Image 01 Live); up to 4 images per request; canvas up to 16777216 pixels
+- **Text to image** — 10 models (Qwen Image 2.0 Fast, Qwen Image 3.0, Qwen Image 3.0 Pro, GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2, Wan Image 2.7 Fast, Qwen Image 2.0 Pro, Wan Image 2.7 Pro, MiniMax Image 01 Live); PNG; up to 4 images per request; canvas up to 16.8 MP
+  - 16.8 MP (4K tier): Wan Image 2.7 Pro (up to 4 images per request); GPT Image 2.5 Flare, GPT Image 2.5 Sunburst, GPT Image 2 (1 image per request)
 
 ## Why use Beatra instead of calling model APIs directly
 

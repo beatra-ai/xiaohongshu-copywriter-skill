@@ -46,11 +46,12 @@ gh skill install beatra-ai/xiaohongshu-copywriter-skill zhongcao-note-copywriter
 从 https://github.com/beatra-ai/xiaohongshu-copywriter-skill 安装 zhongcao-note-copywriter skill（目录 skills/zhongcao-note-copywriter），然后按它的 SKILL.md 连接我的 Beatra 账号。
 ```
 
-## 规格
+## 技术规格与输出限制
 
 截至 2026-10-16。实时列表：https://docs.beatra.ai/zh/docs/models
 
-- **文生图** — 10 个模型（Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、MiniMax Image 01 Live）；单次最多 4 张；画布最多 16777216 像素
+- **文生图** — 10 个模型（Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、MiniMax Image 01 Live）；PNG；单次最多 4 张；画布最大 16.8 MP
+  - 16.8 MP（4K 档）：Wan Image 2.7 Pro（单次最多 4 张）；GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2（单次 1 张）
 
 ## 为什么用 Beatra，而不是直接调用模型 API
 
