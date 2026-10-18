@@ -2,7 +2,7 @@
 
 简体中文 | [English](./README.en.md)
 
-把商品、体验、选题或受众信息整理成小红书标题、笔记正文、首图文案、话题标签和自然的评论互动引导，在 Claude Code、Codex 或 OpenClaw 里直接完成。
+把商品、体验、选题或受众信息整理成小红书标题、笔记正文、首图文案、话题标签和自然的评论互动引导，在 Claude Code、Cursor、Codex、Windsurf、Cline 或 OpenClaw 里直接完成。
 
 > [!IMPORTANT]
 > 生成需要 [Beatra](https://beatra.ai) 账号并消耗积分，安装本身不收费。
@@ -10,9 +10,10 @@
 | 问题 | 回答 |
 | --- | --- |
 | **能做什么** | 把商品、体验、选题或受众信息整理成小红书标题、笔记正文、首图文案、话题标签和自然的评论互动引导。 |
+| **底层模型** | Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、MiniMax Image 01 Live |
 | **运行要求** | Python 3.10+，以及能加载 `SKILL.md` 的 Agent |
 | **费用** | 安装免费。每次生成消耗 Beatra 账号积分，只有你明确要求这次生成或批准确认卡后才会付费。 |
-| **支持的 Agent** | Claude Code、Codex、OpenClaw |
+| **支持的 Agent** | Claude Code、Cursor、Codex、Windsurf、Cline、OpenClaw |
 
 <p align="center"><img src="assets/hero.webp" width="800" alt="虚构品牌「豆拾 DOUSHI」手摇磨豆机的小红书笔记：文案由 Skill 生成，封面图由 Beatra AI 生成。"></p>
 
@@ -20,7 +21,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.4 |
+| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.5 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/zhongcao-note-copywriter) 自动发布，问题请到那里反馈。
 
@@ -38,7 +39,7 @@ npx skills add beatra-ai/xiaohongshu-copywriter-skill
 gh skill install beatra-ai/xiaohongshu-copywriter-skill zhongcao-note-copywriter
 ```
 
-也可以克隆本仓库，把 `skills/zhongcao-note-copywriter` 复制到 `~/.claude/skills/`（Claude Code）、`~/.agents/skills/`（Codex）或 `~/.openclaw/skills/`（OpenClaw）。
+也可以克隆本仓库，把 `skills/zhongcao-note-copywriter` 复制到 `~/.claude/skills/`（Claude Code）、`~/.cursor/skills/`（Cursor）、`~/.agents/skills/`（Codex）、`~/.codeium/windsurf/skills/`（Windsurf）、`~/.cline/skills/`（Cline）或 `~/.openclaw/skills/`（OpenClaw）。
 
 或者把下面这段话发给你的 Agent：
 
@@ -48,19 +49,19 @@ gh skill install beatra-ai/xiaohongshu-copywriter-skill zhongcao-note-copywriter
 
 ## 技术规格与输出限制
 
-截至 2026-10-16。实时列表：https://docs.beatra.ai/zh/docs/models
+截至 2026-10-18。实时列表：https://docs.beatra.ai/zh/docs/models
 
 - **文生图** — 10 个模型（Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、MiniMax Image 01 Live）；PNG；单次最多 4 张；画布最大 16.8 MP
   - 16.8 MP（4K 档）：Wan Image 2.7 Pro（单次最多 4 张）；GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2（单次 1 张）
 
 ## 为什么用 Beatra，而不是直接调用模型 API
 
-- **一个账号用到本 skill 的全部模型** — 文生图 10（截至 2026-10-16），一次 Beatra 登录即可使用，不必分别管理各家模型的 key。
+- **一个账号用到本 skill 的全部模型** — 文生图 10（Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、MiniMax Image 01 Live）（截至 2026-10-18），一次 Beatra 登录即可使用，不必分别管理各家模型的 key。
 - **花不花钱由你决定** — 只有你明确要求这次生成，或批准显示实时积分估算的确认卡后才会付费。
 - **先策划，再生成** — skill 先帮你规划、指导和检查，再在 Beatra 上生成。
 - **文件可以核验** — `skills/` 下的每个文件都与 cdn.beatra.ai 上的发布归档逐字节一致，每次推送前用 SHA-256 校验。
 - **更新由你掌控** — 不含自更新程序；用安装时的工具更新。
-- **在你的 Agent 里运行** — Claude Code、Codex、OpenClaw。
+- **在你的 Agent 里运行** — Claude Code、Cursor、Codex、Windsurf、Cline、OpenClaw。
 
 ## 你能得到什么
 
