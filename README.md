@@ -1,6 +1,8 @@
 # 小红书文案 Skill
 
-简体中文 | [English](./README.en.md)
+简体中文 | [English](./README.en.md) | [日本語](./README.ja.md)
+
+> 👉 也看看 [小红书封面制作 Skill](https://github.com/beatra-ai/xiaohongshu-cover-maker-skill)
 
 把商品、体验、选题或受众信息整理成小红书标题、笔记正文、首图文案、话题标签和自然的评论互动引导，在 Claude Code、Cursor、Codex、Windsurf、Cline 或 OpenClaw 里直接完成。
 

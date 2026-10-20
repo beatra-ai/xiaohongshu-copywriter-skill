@@ -1,6 +1,8 @@
 # 小红书文案 Skill
 
-[简体中文](./README.md) | English
+[简体中文](./README.md) | English | [日本語](./README.ja.md)
+
+> 👉 See also [小红书封面制作 Skill](https://github.com/beatra-ai/xiaohongshu-cover-maker-skill)
 
 Turn a product, experience, topic, or audience brief into Xiaohongshu title options, a readable note body, cover text, hashtags, and a natural comment starter, from inside Claude Code, Cursor, Codex, Windsurf, Cline, or OpenClaw.
 
