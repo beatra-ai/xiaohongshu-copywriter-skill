@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "xiaohongshu-copywriter-skill",
+  "description": "Beatra 小红书文案 Skill 的 Claude Code 插件。",
+  "owner": {
+    "name": "Beatra AI",
+    "url": "https://github.com/beatra-ai"
+  },
+  "plugins": [
+    {
+      "name": "zhongcao-note-copywriter",
+      "source": "./",
+      "description": "Turn a product, experience, topic, or audience brief into Xiaohongshu title options, a readable note body, cover text, hashtags, and a natural comment starter."
+    }
+  ]
+}

@@ -23,7 +23,7 @@ Turn a product, experience, topic, or audience brief into Xiaohongshu title opti
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.6 |
+| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.7 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/zhongcao-note-copywriter). Report issues there.
 
@@ -33,6 +33,33 @@ With the [`skills`](https://skills.sh) CLI:
 
 ```bash
 npx skills add beatra-ai/xiaohongshu-copywriter-skill
+```
+
+As a Claude Code plugin:
+
+```bash
+claude plugin marketplace add beatra-ai/xiaohongshu-copywriter-skill
+claude plugin install zhongcao-note-copywriter@xiaohongshu-copywriter-skill
+```
+
+As a Codex plugin:
+
+```bash
+codex plugin marketplace add beatra-ai/xiaohongshu-copywriter-skill
+codex plugin add zhongcao-note-copywriter@xiaohongshu-copywriter-skill
+```
+
+As a GitHub Copilot CLI plugin:
+
+```bash
+copilot plugin marketplace add beatra-ai/xiaohongshu-copywriter-skill
+copilot plugin install zhongcao-note-copywriter@xiaohongshu-copywriter-skill
+```
+
+As a Gemini CLI extension:
+
+```bash
+gemini extensions install https://github.com/beatra-ai/xiaohongshu-copywriter-skill
 ```
 
 With the GitHub CLI:

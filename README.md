@@ -23,7 +23,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.6 |
+| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.7 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/zhongcao-note-copywriter) 自动发布，问题请到那里反馈。
 
@@ -33,6 +33,33 @@
 
 ```bash
 npx skills add beatra-ai/xiaohongshu-copywriter-skill
+```
+
+作为 Claude Code 插件：
+
+```bash
+claude plugin marketplace add beatra-ai/xiaohongshu-copywriter-skill
+claude plugin install zhongcao-note-copywriter@xiaohongshu-copywriter-skill
+```
+
+作为 Codex 插件：
+
+```bash
+codex plugin marketplace add beatra-ai/xiaohongshu-copywriter-skill
+codex plugin add zhongcao-note-copywriter@xiaohongshu-copywriter-skill
+```
+
+作为 GitHub Copilot CLI 插件：
+
+```bash
+copilot plugin marketplace add beatra-ai/xiaohongshu-copywriter-skill
+copilot plugin install zhongcao-note-copywriter@xiaohongshu-copywriter-skill
+```
+
+作为 Gemini CLI 扩展：
+
+```bash
+gemini extensions install https://github.com/beatra-ai/xiaohongshu-copywriter-skill
 ```
 
 使用 GitHub CLI：
@@ -112,7 +139,7 @@ gh skill install beatra-ai/xiaohongshu-copywriter-skill zhongcao-note-copywriter
 - 官网 — https://www.beatra.cn?utm_source=github&utm_medium=flagship&utm_campaign=xiaohongshu-copywriter-skill
 - 文档 — https://docs.beatra.cn?utm_source=github&utm_medium=flagship&utm_campaign=xiaohongshu-copywriter-skill
 - 控制台 — https://console.beatra.cn
-- 给 AI Agent 读的说明 — https://www.beatra.cn/llms.txt（索引）· https://www.beatra.cn/llms-full.txt（全部 skill 合成一个文件）
+- 给 AI Agent 读的说明 — https://www.beatra.cn/llms.txt （索引）· https://www.beatra.cn/llms-full.txt （全部 skill 合成一个文件）
 
 - 微信小程序 — 国内用户微信扫码使用
 

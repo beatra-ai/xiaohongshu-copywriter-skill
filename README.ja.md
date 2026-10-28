@@ -23,7 +23,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.6 |
+| [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.7 |
 
 このリポジトリは [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/zhongcao-note-copywriter) から自動的に公開されています。問題の報告はそちらへお願いします。
 
@@ -33,6 +33,33 @@
 
 ```bash
 npx skills add beatra-ai/xiaohongshu-copywriter-skill
+```
+
+Claude Code プラグインとして：
+
+```bash
+claude plugin marketplace add beatra-ai/xiaohongshu-copywriter-skill
+claude plugin install zhongcao-note-copywriter@xiaohongshu-copywriter-skill
+```
+
+Codex プラグインとして：
+
+```bash
+codex plugin marketplace add beatra-ai/xiaohongshu-copywriter-skill
+codex plugin add zhongcao-note-copywriter@xiaohongshu-copywriter-skill
+```
+
+GitHub Copilot CLI プラグインとして：
+
+```bash
+copilot plugin marketplace add beatra-ai/xiaohongshu-copywriter-skill
+copilot plugin install zhongcao-note-copywriter@xiaohongshu-copywriter-skill
+```
+
+Gemini CLI 拡張機能として：
+
+```bash
+gemini extensions install https://github.com/beatra-ai/xiaohongshu-copywriter-skill
 ```
 
 GitHub CLI を使う場合：
@@ -103,4 +130,4 @@ https://github.com/beatra-ai/xiaohongshu-copywriter-skill から zhongcao-note-c
 - ウェブサイト — https://beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=xiaohongshu-copywriter-skill
 - ドキュメント — https://docs.beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=xiaohongshu-copywriter-skill
 - コンソール — https://console.beatra.ai
-- AI エージェント向け — https://beatra.ai/llms.txt（インデックス）· https://beatra.ai/llms-full.txt（全スキルを 1 ファイルに）
+- AI エージェント向け — https://beatra.ai/llms.txt （インデックス）· https://beatra.ai/llms-full.txt （全スキルを 1 ファイルに）
