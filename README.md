@@ -62,6 +62,12 @@ copilot plugin install zhongcao-note-copywriter@xiaohongshu-copywriter-skill
 gemini extensions install https://github.com/beatra-ai/xiaohongshu-copywriter-skill
 ```
 
+作为 Antigravity CLI 插件：
+
+```bash
+agy plugin install https://github.com/beatra-ai/xiaohongshu-copywriter-skill
+```
+
 使用 GitHub CLI：
 
 ```bash
@@ -75,6 +81,14 @@ gh skill install beatra-ai/xiaohongshu-copywriter-skill zhongcao-note-copywriter
 ```text
 从 https://github.com/beatra-ai/xiaohongshu-copywriter-skill 安装 zhongcao-note-copywriter skill（目录 skills/zhongcao-note-copywriter），然后按它的 SKILL.md 连接我的 Beatra 账号。
 ```
+
+## 输入与输出
+
+| | 类型 | 格式 | 规格 |
+| --- | --- | --- | --- |
+| **输入** | 文本：一个商品、一次体验、一个选题或一群读者 | — | — |
+| **输出** | 文本：5 个标题备选、正文、首图文案、话题标签和一条评论引导 | — | 可编辑 |
+| **输出** | 图片：围绕其中一个标题做的竖版封面，留好标题位置 | PNG、JPG、WEBP | 单次 1 张；2K；画幅 3:4 |
 
 ## 技术规格与输出限制
 
@@ -118,7 +132,7 @@ gh skill install beatra-ai/xiaohongshu-copywriter-skill zhongcao-note-copywriter
 
 ### 商品说法从哪里来？
 
-来自你。价格、效果、资质和亲身体验都按你提供的事实来写；缺了哪一条，会先来问你要。
+来自你。数字、效果、资质和亲身体验都按你提供的事实来写。
 
 ### 可以写成别的语言吗？
 
@@ -132,7 +146,9 @@ gh skill install beatra-ai/xiaohongshu-copywriter-skill zhongcao-note-copywriter
 
 ## 许可证
 
-[MIT-0](LICENSE)：可自由使用、修改和再分发，包括商用，无需署名；与这些 skill 在 ClawHub 上的条款一致。
+本仓库的 Skill 文件（`SKILL.md`、参考文档和脚本）与本 README 采用 [MIT-0](LICENSE) 许可：可自由使用、修改和再分发，包括商用，无需署名。
+
+内容生成在 Beatra 云端完成，适用 [Beatra 服务条款](https://www.beatra.cn/terms?utm_source=github&utm_medium=flagship&utm_campaign=xiaohongshu-copywriter-skill)。
 
 ## 相关链接
 

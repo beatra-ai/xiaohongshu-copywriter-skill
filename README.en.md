@@ -62,6 +62,12 @@ As a Gemini CLI extension:
 gemini extensions install https://github.com/beatra-ai/xiaohongshu-copywriter-skill
 ```
 
+As an Antigravity CLI plugin:
+
+```bash
+agy plugin install https://github.com/beatra-ai/xiaohongshu-copywriter-skill
+```
+
 With the GitHub CLI:
 
 ```bash
@@ -77,6 +83,14 @@ Or paste this into your agent:
 ```text
 Install the zhongcao-note-copywriter skill from https://github.com/beatra-ai/xiaohongshu-copywriter-skill (folder skills/zhongcao-note-copywriter), then follow its SKILL.md to connect my Beatra account.
 ```
+
+## Inputs and outputs
+
+| | Type | Formats | Specifications |
+| --- | --- | --- | --- |
+| **Input** | Text — A product, an experience, a topic, or an audience brief | — | — |
+| **Output** | Text — Five title options, a note body, cover wording, hashtags, and a comment starter | — | editable |
+| **Output** | Image — Vertical cover built around one of the titles, with a headline-safe composition | PNG, JPG, WEBP | 1 image per request; 2K; aspect ratios 3:4 |
 
 ## Technical Specifications & Output Limits
 
@@ -120,7 +134,7 @@ Yes. Mark a brand phrase, product name, or required line as must-keep and it app
 
 ### Where do product claims come from?
 
-From you. Prices, results, credentials, and personal experience are written from the facts you supply, and a missing one comes back as a question.
+From you. Numbers, results, credentials, and personal experience are written from the facts you supply.
 
 ### Can I write in another language?
 
@@ -135,9 +149,10 @@ Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 
-[MIT-0](LICENSE) — free to use, modify, and redistribute, including
-commercially. No attribution required. Same terms as these skills carry on
-ClawHub.
+The skill files in this repository (`SKILL.md`, references, and scripts) and this README are licensed under
+[MIT-0](LICENSE): free to use, modify, and redistribute, including commercially, with no attribution required.
+
+Media generation runs on Beatra's cloud service under the [Beatra Terms of Service](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=xiaohongshu-copywriter-skill).
 
 ## Links
 

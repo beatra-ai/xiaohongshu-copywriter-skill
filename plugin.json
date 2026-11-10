@@ -10,6 +10,20 @@
   "homepage": "https://beatra.ai/skills/zhongcao-note-copywriter",
   "repository": "https://github.com/beatra-ai/xiaohongshu-copywriter-skill",
   "license": "MIT-0",
+  "keywords": [
+    "Xiaohongshu copywriter",
+    "REDnote note copywriter",
+    "Xiaohongshu title generator",
+    "Xiaohongshu post copy",
+    "Xiaohongshu product copy",
+    "Xiaohongshu recommendation copy",
+    "Xiaohongshu hashtags",
+    "Xiaohongshu cover text",
+    "Xiaohongshu note ideas",
+    "competitor note analysis",
+    "comment analysis",
+    "Xiaohongshu research"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
@@ -19,6 +33,13 @@
         "developerName": "Beatra AI",
         "category": "Creativity",
         "websiteURL": "https://beatra.ai/skills/zhongcao-note-copywriter",
+        "supportURL": "https://github.com/beatra-ai/.github/blob/main/SUPPORT.md",
+        "privacyPolicyURL": "https://beatra.ai/privacy",
+        "termsOfServiceURL": "https://beatra.ai/terms",
+        "defaultPrompt": [
+          "用「小红薯·笔记文案制作」给我的手作陶瓷杯写一篇笔记，写给租房的上班族，要5个标题、首图文案和话题标签。"
+        ],
+        "composerIcon": "./assets/icon.png",
         "logo": "./assets/icon.png"
       }
     }

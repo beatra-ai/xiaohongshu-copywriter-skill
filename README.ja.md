@@ -62,6 +62,12 @@ Gemini CLI 拡張機能として：
 gemini extensions install https://github.com/beatra-ai/xiaohongshu-copywriter-skill
 ```
 
+Antigravity CLI プラグインとして：
+
+```bash
+agy plugin install https://github.com/beatra-ai/xiaohongshu-copywriter-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash
@@ -75,6 +81,14 @@ gh skill install beatra-ai/xiaohongshu-copywriter-skill zhongcao-note-copywriter
 ```text
 https://github.com/beatra-ai/xiaohongshu-copywriter-skill から zhongcao-note-copywriter スキル（フォルダ skills/zhongcao-note-copywriter）をインストールし、その SKILL.md に従って私の Beatra アカウントに接続してください。
 ```
+
+## 入力と出力
+
+| | 種類 | 形式 | 仕様 |
+| --- | --- | --- | --- |
+| **入力** | テキスト：商品、体験、投稿テーマ、想定読者 | — | — |
+| **出力** | テキスト：タイトル案5つ、本文、表紙コピー、ハッシュタグ、コメントのきっかけ | — | 編集可能 |
+| **出力** | 画像：タイトルの1つを軸にした、見出しの余白がある縦型カバー | PNG、JPG、WEBP | 1 リクエストにつき 1 枚／2K／アスペクト比 3:4 |
 
 ## 技術仕様と出力上限
 
@@ -107,9 +121,9 @@ https://github.com/beatra-ai/xiaohongshu-copywriter-skill から zhongcao-note-c
 
 残せます。ブランド表現、商品名、必ず入れたい一文を指定すれば、そのままコピーに反映します。
 
-### 商品の言い回しはどこから来ますか？
+### 商品の数字や効果は、何をもとに書きますか？
 
-あなたからです。価格、実感、資格、体験は提供された事実をもとに書き、足りない点は質問として返ります。
+あなたからです。数字、実感、資格、体験は提供された事実をもとに書きます。
 
 ### 別の言語でも書けますか？
 
@@ -123,7 +137,9 @@ https://github.com/beatra-ai/xiaohongshu-copywriter-skill から zhongcao-note-c
 
 ## ライセンス
 
-[MIT-0](LICENSE)：商用を含め、自由に使用・改変・再配布できます。クレジット表記は不要です。ClawHub 上のこれらのスキルと同じ条件です。
+このリポジトリのスキルファイル（`SKILL.md`、リファレンス、スクリプト）とこの README は [MIT-0](LICENSE) で提供しています。商用を含め、自由に使用・改変・再配布でき、クレジット表記は不要です。
+
+生成は Beatra のクラウドサービスで行われ、[Beatra 利用規約](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=xiaohongshu-copywriter-skill)が適用されます。
 
 ## リンク
 
