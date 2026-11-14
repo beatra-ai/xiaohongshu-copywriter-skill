@@ -12,7 +12,7 @@
 | 項目 | 内容 |
 | --- | --- |
 | **できること** | 商品、体験、投稿テーマ、想定読者から、小紅書のタイトル、本文、表紙コピー、ハッシュタグ、自然なコメント案を整えます。 |
-| **モデル** | Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、MiniMax Image 01 Live |
+| **モデル** | Qwen Image 3.0、MiniMax H3 Image、Qwen Image 2.0 Fast、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro |
 | **動作要件** | Python 3.10 以上と、`SKILL.md` を読み込めるエージェント |
 | **費用** | インストールは無料。生成のたびに Beatra アカウントのクレジットを消費しますが、課金されるのは、その生成を明示的に依頼したとき、または確認カードを承認したときだけです。 |
 | **対応エージェント** | Claude Code、Cursor、Codex、Windsurf、Cline、OpenClaw |
@@ -26,6 +26,8 @@
 | [`zhongcao-note-copywriter`](skills/zhongcao-note-copywriter) | [SKILL.md](skills/zhongcao-note-copywriter/SKILL.md) | 0.2.7 |
 
 このリポジトリは [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/zhongcao-note-copywriter) から自動的に公開されています。問題の報告はそちらへお願いします。
+
+このスキルは `xiaohongshu-copywriter` としても知られています（インストール名：`zhongcao-note-copywriter`）。
 
 ## インストール
 
@@ -82,6 +84,8 @@ gh skill install beatra-ai/xiaohongshu-copywriter-skill zhongcao-note-copywriter
 https://github.com/beatra-ai/xiaohongshu-copywriter-skill から zhongcao-note-copywriter スキル（フォルダ skills/zhongcao-note-copywriter）をインストールし、その SKILL.md に従って私の Beatra アカウントに接続してください。
 ```
 
+クリーン環境で動作確認済み：Antigravity CLI (2026-11-09)。
+
 ## 入力と出力
 
 | | 種類 | 形式 | 仕様 |
@@ -92,10 +96,10 @@ https://github.com/beatra-ai/xiaohongshu-copywriter-skill から zhongcao-note-c
 
 ## 技術仕様と出力上限
 
-2026-10-18 時点。最新の一覧：https://docs.beatra.ai/ja/docs/models
+2026-11-14 時点。最新の一覧：https://docs.beatra.ai/ja/docs/models
 
-- **テキストから画像** — 10 モデル（Qwen Image 2.0 Fast、Qwen Image 3.0、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro、MiniMax Image 01 Live）／PNG／1 リクエストあたり最大 4 枚／キャンバス最大 16.8 MP
-  - 16.8 MP（4K ティア）：Wan Image 2.7 Pro（1 リクエストあたり最大 4 枚）／GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2（1 リクエストにつき 1 枚）
+- **テキストから画像** — 10 モデル（Qwen Image 3.0、MiniMax H3 Image、Qwen Image 2.0 Fast、Qwen Image 3.0 Pro、GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2、Wan Image 2.7 Fast、Qwen Image 2.0 Pro、Wan Image 2.7 Pro）／PNG／1 リクエストあたり最大 4 枚／キャンバス最大 16.8 MP
+  - 16.8 MP（4K ティア）：MiniMax H3 Image、Wan Image 2.7 Pro（1 リクエストあたり最大 4 枚）／GPT Image 2.5 Flare、GPT Image 2.5 Sunburst、GPT Image 2（1 リクエストにつき 1 枚）
 
 ## 得られるもの
 
@@ -143,6 +147,7 @@ https://github.com/beatra-ai/xiaohongshu-copywriter-skill から zhongcao-note-c
 
 ## リンク
 
+- スキルページ — https://beatra.ai/skills/zhongcao-note-copywriter?utm_source=github&utm_medium=flagship&utm_campaign=xiaohongshu-copywriter-skill
 - ウェブサイト — https://beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=xiaohongshu-copywriter-skill
 - ドキュメント — https://docs.beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=xiaohongshu-copywriter-skill
 - コンソール — https://console.beatra.ai
